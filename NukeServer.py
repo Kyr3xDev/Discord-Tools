@@ -22,13 +22,13 @@ def validateToken(token):
     url = "https://discord.com/api/v10/users/@me"
     headers = { "Authorization", f"Bot {token}" }
     response = requests.get(url, headers=headers)
-    return response.status_code == 200:
+    return response.status_code == 200
 
 def main():
     bot_token = input("Enter Bot Token >> ")
     if validateToken(bot_token):
         print("[+] Token Validated")
     else:
-        print("[!] Cannot login to token.)
+        print("[!] Cannot login to token.")
         sys.exit(0)
     
