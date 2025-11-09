@@ -20,7 +20,7 @@ bot = commands.Bot(command_prefix=".", intents=discord.Intents.All())
 
 def validateToken(token):
     url = "https://discord.com/api/v10/users/@me"
-    headers = { "Authorization", f"Bot {token}" }
+    headers = { "Authorization": f"Bot {token}" }
     response = requests.get(url, headers=headers)
     return response.status_code == 200
 
