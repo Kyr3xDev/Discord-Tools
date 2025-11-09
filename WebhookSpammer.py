@@ -4,7 +4,7 @@ import requests
 import threading
 
 def main():
-    webhook = input("Please Insert WebHook URL >> ").strip()
+    webhook = input("Enter WebHook URL >> ").strip()
     message = input("Enter WebHook Message >> ").strip()
     threadsn = int(input("Enter Number of Threads >> "))
     sleep = float(input("Enter Sleep Time (seconds) >> "))
